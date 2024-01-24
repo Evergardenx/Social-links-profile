@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --dark-grey: hsl(0, 0%, 12%);
+  --green: hsl(75, 94%, 57%);
+  --grey: hsl(0, 0%, 20%);
+  --off-black: hsl(0, 0%, 8%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* || RESET */
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* || GENERAL STYLES */
+body {
+  align-items: center;
+  background-color: var(--off-black);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.article {
+  background-color: var(--dark-grey);
+  border-radius: 0.5em;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2em;
+}
+
+.article__image {
+  max-width: 7rem;
+  border-radius: 100%;
+  padding: 2rem;
+}
+
+.article__name {
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.article__location {
+  color: var(--green);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding-top: 0.8em;
+  padding-bottom: 2rem;
+}
+
+.article__description {
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.87rem;
+  padding-bottom: 1.5rem;
+  opacity: 0.7;
+}
+
+.article__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.7em;
+  padding-bottom: 2rem;
+}
+
+button {
+  all: unset;
+  display: block;
+  border-radius: 0.5em;
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  background-color: var(--grey);
+  font-size: 0.8rem;
+  padding: 0.8em;
+}
+
+button:hover {
+  background-color: var(--green);
+  color: var(--grey);
+  cursor: pointer;
+  caret-color: black;
+}
